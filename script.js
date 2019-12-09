@@ -3,13 +3,38 @@
 
 //----define moment varibles used to show time----//
 var date = moment().format("MMM Do YY");
-moment().format('LT');
-
+// var currentTime = moment().format('H');
+// console.log(currentTime);
 
 //-------append date----------//
 $("#currentDay").append(date);
-console.log(date);
 
+
+//---------background Updater------------------------//
+
+var timeOfday = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
+updatetime();
+
+function updatetime() {
+  var currentTime = moment().format('H');
+  for(var i = 0; i < timeOfday.length; i++) {
+    console.log(timeOfday[i]);
+
+    if (parseInt(timeOfday[i]) > currentTime) {
+      $("#" + timeOfday[i]).attr("style", "background-color: green");
+
+
+    }
+    else if (parseInt(timeOfday[i]) < currentTime) {
+      $("#" + timeOfday[i]).attr("style", "background-color: grey");
+
+    }
+    else if (parseInt(timeOfday[i]) == currentTime) {
+      $("#" + timeOfday[i]).attr("style", "background-color: red");
+    
+    }
+  }
+}
 
 //--onclick event to save user input to local storage---//
 $(".rowBtn").on("click", function() {
