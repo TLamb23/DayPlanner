@@ -4,30 +4,26 @@ body {
     line-height: 1;
   }
 
-  #Addon {
-      width: 80px;
-  }
 
-  .form-control {
-      height: 80px;
+  .col-10 {
       background: transparent;
       border: none;
       resize: none;
       color: #000000;
-      border-left: 1px solid black;
-      border-top: 1px solid rgb(224, 224, 224);
+      border-left: 1px solid rgb(196, 194, 194);
+      border-top: 1px solid rgb(196, 194, 194);
       padding: 10px;
       white-space: pre-wrap;
   }
-  /* textarea{
+  /* .col-10 {
     background: transparent;
     border: none;
     resize: none;
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
-  }
-   */
+  } */
+  
   .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -35,32 +31,28 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
+
   
-  /* .description{
+  .row {
     white-space: pre-wrap;
-  } */
+    height: 80px;
+  }
   
-  .time-block{
+  #time {
     text-align: center;
-    border-radius: 15px;
+    padding: 23px;
   }
-  
-  .inputgroup {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid grey;
+  .col-1 {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed rgb(196, 194, 194);
+    margin: 0 auto;
   }
-  
-  /* .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
-  } */
   
   .hour {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed #000000;
+    border-top: 1px dashed rgb(196, 194, 194);
   }
   
   .past {
@@ -78,17 +70,19 @@ body {
     color: white;
   }
   
-  .saveBtn {
-    border-left: 1px solid black;
+  .rowBtn {
+    border-left: 1px solid rgb(196, 194, 194);
+    border-top: 1px solid rgb(196, 194, 194);
+    border-right: 1px solid rgb(196, 194, 194);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
     
   }
-  
-  .saveBtn i:hover {
+/*   
+  .rowBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
-  
+   */
