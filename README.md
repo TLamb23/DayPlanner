@@ -38,13 +38,13 @@ $(".rowBtn").on("click", function() {
     var textContent = $(this)
     .siblings("input")
     .val();
-localStorage.setItem(hour, textContent);
-console.log(hour, textContent);
+    localStorage.setItem(hour, textContent);
+    console.log(hour, textContent);
 });
 
 $("#9am")
 .children("input")
-  .val(localStorage.getItem("9am"));
+.val(localStorage.getItem("9am"));
 
 ```
 
