@@ -31,20 +31,12 @@ levraging jQuery for this calander simplified both the events that store user in
 ```js
 
 $(".rowBtn").on("click", function() {
-    var hour = $(this)
-    .parent()
-    .attr("id")
+    var timeOfday = $(this).parent().attr("id");
+    var textContent = $("input").val().trim();
 
-    var textContent = $(this)
-    .siblings("input")
-    .val();
-    localStorage.setItem(hour, textContent);
-    console.log(hour, textContent);
+    localStorage.setItem(timeOfday, textContent);
+    console.log(timeOfday, textContent);
 });
-
-$("#9am")
-.children("input")
-.val(localStorage.getItem("9am"));
 
 ```
 
