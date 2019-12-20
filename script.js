@@ -20,16 +20,16 @@ function updatetime() {
   for(var i = 0; i < timeOfday.length; i++) {
 
     if (parseInt(timeOfday[i]) > currentTime) {
-      $("#" + timeOfday[i]).attr("style", "background-color: green");
+      $("#" + timeOfday[i]).attr("style", "background-color: #58ce7b");
 
 
     }
     else if (parseInt(timeOfday[i]) < currentTime) {
-      $("#" + timeOfday[i]).attr("style", "background-color: grey");
+      $("#" + timeOfday[i]).attr("style", "background-color: lightgray");
 
     }
     else if (parseInt(timeOfday[i]) == currentTime) {
-      $("#" + timeOfday[i]).attr("style", "background-color: red");
+      $("#" + timeOfday[i]).attr("style", "background-color: #fc665e");
     
     }
   }
@@ -37,57 +37,28 @@ function updatetime() {
 
 //--onclick event to save user input to local storage---//
 $(".rowBtn").on("click", function() {
-        var hour = $(this)
-        .parent()
-        .attr("id")
+    var timeOfday = $(this).parent().attr("id");
+    var textContent = $("input").val().trim();
 
-        var textContent = $(this)
-        .siblings("input")
-        .val();
-localStorage.setItem(hour, textContent);
-console.log(hour, textContent);
+    localStorage.setItem(timeOfday, textContent);
+    console.log(timeOfday, textContent);
 });
 
 //-------Getting individual childern and setting to parent-----//
-  $("#9am")
-  .children("input")
-  .val(localStorage.getItem("9am"));
+  $("#9am").children("input").val(localStorage.getItem("9am"));
 
-  $("#10am")
-  .children("input")
-  .val(localStorage.getItem("10am"));
+  $("#10am").children("input").val(localStorage.getItem("10am"));
 
+  $("#11am").children("input").val(localStorage.getItem("11am"));
 
-  $("#11am")
-  .children("input")
-  .val(localStorage.getItem("11am"));
+  $("#12pm").children("input").val(localStorage.getItem("12pm"));
 
+  $("#1pm").children("input").val(localStorage.getItem("1pm"));
 
-  $("#12pm")
-  .children("input")
-  .val(localStorage.getItem("12pm"));
+  $("#2pm").children("input").val(localStorage.getItem("2pm"));
 
+  $("#3pm").children("input").val(localStorage.getItem("3pm"));
 
-  $("#1pm")
-  .children("input")
-  .val(localStorage.getItem("1pm"));
+  $("#4pm").children("input").val(localStorage.getItem("4pm"));
 
-
-  $("#2pm")
-  .children("input")
-  .val(localStorage.getItem("2pm"));
-
-
-  $("#3pm")
-  .children("input")
-  .val(localStorage.getItem("3pm"));
-
-
-  $("#4pm")
-  .children("input")
-  .val(localStorage.getItem("4pm"));
-
-
-  $("#5pm")
-  .children("input")
-  .val(localStorage.getItem("5pm"));
+  $("#5pm").children("input").val(localStorage.getItem("5pm"));

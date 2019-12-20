@@ -12,26 +12,10 @@ body {
       color: #000000;
       border-left: 1px solid rgb(196, 194, 194);
       border-top: 1px solid rgb(196, 194, 194);
+      border-bottom: 1px solid rgb(184, 184, 184);
       padding: 10px;
       white-space: pre-wrap;
   }
-  /* .col-10 {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-  } */
-  
-  .jumbotron {
-    text-align: center;
-    background-color: transparent;
-    color: black;
-    border-radius: 0;
-    border-bottom: 10px solid black;
-  }
-
   
   .row {
     white-space: pre-wrap;
@@ -39,50 +23,22 @@ body {
   }
   
   #time {
-    text-align: center;
     padding: 23px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
-  .col-1 {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed rgb(196, 194, 194);
-    margin: 0 auto;
-  }
+ 
   
   .hour {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed rgb(196, 194, 194);
-  }
-  
-  .past {
-    background-color: #d3d3d3;
-    color: white;
-  }
-  
-  .present {
-    background-color: #ff6961;
-    color: white;
-  }
-  
-  .future {
-    background-color: #77dd77;
-    color: white;
   }
   
   .rowBtn {
-    border-left: 1px solid rgb(196, 194, 194);
-    border-top: 1px solid rgb(196, 194, 194);
-    border-right: 1px solid rgb(196, 194, 194);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
     
   }
-/*   
-  .rowBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-  }
-   */
+   

@@ -8,7 +8,7 @@ This application is a simple calander that allows the user to save events for ea
 
 
 ## Site Picture 
-![site](day-planner.png)
+![site](work-day.png)
   
  
 
