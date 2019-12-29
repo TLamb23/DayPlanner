@@ -50,8 +50,10 @@ $(".rowBtn").on("click", function() {
 
 ## Authors
 
-**Chris Melby** 
-
-- [Link to Portfolio Site](#)
+**Chris Melby**
+- [LinkedIn](https://www.linkedin.com/in/chris-melby-71106b126/)
 - [Link to Github](https://github.com/cmelby)
-- [Link to LinkedIn](https://www.linkedin.com/in/chris-melby-71106b126/)
+- [Portfolio](https://cmelby.github.io/portfolio/)
+
+
+
